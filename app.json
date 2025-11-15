@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Mentra Face Finder",
+    "slug": "mentra-face-finder",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.mentra.facefinder",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Mentra Face Finder uses the camera to detect and identify faces in real time.",
+        "NSPhotoLibraryUsageDescription": "Mentra Face Finder accesses your photo library to build a local face embedding index for matching.",
+        "NSPhotoLibraryAddUsageDescription": "Mentra Face Finder may save matched results to your photo library."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#000000"
+      },
+      "package": "com.mentra.facefinder"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "Mentra Face Finder uses the camera to detect and identify faces in real time.",
+          "enableMicrophonePermission": false
+        }
+      ]
+    ],
+    "scheme": "mentra-face-finder",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
