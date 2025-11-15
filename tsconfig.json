@@ -5,7 +5,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@modules/*": ["./modules/*"]
-    }
+    },
+    "types": ["jest"]
   },
   "include": [
     "**/*.ts",
